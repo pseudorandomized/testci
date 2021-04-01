@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  testbuild:
+    runs-on: [self-hosted, testci1 ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run commands
+        run: |
+           docker ps
