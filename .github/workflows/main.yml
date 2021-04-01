@@ -12,3 +12,4 @@ jobs:
       - name: Run commands
         run: |
            docker ps
+           ls -alh
